@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulsePal - MCS</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <div class="banner">
+        <video autoplay loop muted plays-inline>
+            <source src="201968-916877887_large.mp4" type="video/mp4">
+        </video>
+        <div class="navbar">
+
+
+            <ul>
+                <li><a href="#">Believe you can and you're halfway there</a></li>
+            </ul>
+        </div>
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script>
+          window.botpressWebChat.init({
+              "composerPlaceholder": "text me....",
+              "botConversationDescription": "always there :)",
+              "botId": "ceff47cb-0dbd-4163-8c62-395d345715c9",
+              "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+              "messagingUrl": "https://messaging.botpress.cloud",
+              "clientId": "ceff47cb-0dbd-4163-8c62-395d345715c9",
+              "webhookId": "a8bed5a1-79bc-476d-bda3-9a939a4296ac",
+              "lazySocket": true,
+              "themeName": "galaxy",
+              "botName": "PulsePal😊",
+              "avatarUrl": "https://nordvpn.com/wp-content/uploads/blog-featured-what-is-chatbot.svg",
+              "frontendVersion": "v1",
+              "enableConversationDeletion": true,
+              "theme": "galaxy",
+              "themeColor": "#2563eb",
+              "additionalStyles": ".bpContainer{\nheight: 560px;}",
+              "allowedOrigins": []
+          });
+        </script>
+        <div class="content">
+            <h1>PulsePal: Your
+            </h1>
+            <h1>
+                Personal Buddy</h1>
+            <div>
+                <button type="button" id="btn" class="btn">Play Music</button>
+                <button type="button" id="btn2" class="btn2">Stop Music</button>
+                <audio id='Music' src='a.mp3' controls></audio>
+            </div>
+        </div>
+        <script>document.getElementById('btn').addEventListener('click', function () {
+                var audio = document.getElementById('Music');
+                audio.play();
+                document.getElementById('btn2').addEventListener('click', function () {
+                    var audio = document.getElementById('Music');
+                    audio.pause()
+                        audio.currentTime = 0; // Reset to the beginning
+                });
+            });</script>
+    </div>
+</body>
+
+</html>
